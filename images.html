@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pictures CSS</title>
+    <style>
+        #rounded{
+            border-radius: 80px;
+        }
+        #thumbnail{
+            width: 150px;
+            border-radius: 4px;
+            padding: 5px;
+            border: 1px solid #ddd;
+        }
+        #responsive{
+            max-width: 160%;
+            height: auto;
+            border-radius: 4px;
+            padding: 5px;
+            border: 1px solid #ddd;
+        }
+        #center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        div.polaroid{
+            width:80%;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+            margin-bottom: 10px
+        }
+        div.container{
+            text-align: center;
+            padding:10px 20px;
+        }
+        #transparent{
+            opacity: .5;
+        }
+    </style>
+</head>
+<body>
+<div class="polaroid">
+    <img src="piccs/fatcat.jfif" style="width: 100%"/></br>
+    <div class="container">
+        c h o n k y
+    </div>
+</div>
+<img id="transparent" src="piccs/fatcat.jfif"/></br>
+    <img id="center" src="piccs/fatcat.jfif"/></br>
+    <img id="responsive" src="piccs/fatcat.jfif"/></br>
+    <img id="rounded" src="piccs/fatcat.jfif"/></br>
+    <img id="thumbnail" src="piccs/fatcat.jfif"/>
+</body>
+</html>
