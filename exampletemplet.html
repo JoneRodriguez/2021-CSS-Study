@@ -47,10 +47,34 @@
         .banana{
             background-color: #84AA60
         }
+        .content{
+            float: left;
+            width: 75%;
+            background-color: white;
+            padding: 15px;
+            height: 500px;
+            padding-left: 5px;
+            padding-right: 5px;
+
+        }
         #sidebar{
             background-color: white;
             padding: 15px;
             height: 500px;
+
+        }
+        .row:after{
+            content:""
+            display: table;
+            clear: both;
+        }
+        div#footer{
+            background-color:antiquewhite;
+            height: 150px;
+            text-align: center;
+            padding: 20px;
+            font-size: 25px
+
 
         }
     </style>
@@ -63,6 +87,7 @@
             Basic 2 Column CSS Template
         </div</div>
     </div>
+    <div class="row">
     <ul>
         <li><a href="#" class="banana">Home</a></li>
         <li><a href="#">Products</a></li>
@@ -70,16 +95,24 @@
         <li><a href="#">Socials</a></li>
         <li style="float:right;"><a href="#">Contacts</a></li>
     </ul>
+        </div>
+    <div class="row">
+        <div class="content" style="color:purple">
     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
     Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
     Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
     Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
 
     </div>
+
     <div id="sidebar">
         SideBar</br>
         Ads</br>
         Ads
+    </div>
+        <div id="footer">
+            Copyright 2021 | Web Design | <a href="mailto:Jonessa.rodriguez@vtsd.com">Jonessa.rodriguez@vtsd.com></a>
+        </div>
     </div>
 </body>
 </html>
