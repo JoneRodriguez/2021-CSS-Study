@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NavBar menu</title>
+    <style>
+        .navbar {
+            overflow: hidden;
+            background-color: darkslategray;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 18px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: plum;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbutton {
+            font-size: 18px;
+            border: none;
+            outline: none;
+            padding: 14px 16px;
+            color: white;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .dropdownContent{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+            z-index: 1;
+        }
+        .dropdownContent a{
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <a href="#" class="banana">Home</a>
+    <a href="#">Products</a>
+    <a href="#">About</a>
+    <div class="dropdown">
+        <button class="dropbutton">Socials
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdownContent">
+            <a href="#">SnapChat</a>
+            <a href="#">Twitter</a>
+            <a href="#">WhatsApp</a>
+            <a href="#">Signal</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Imstagram</a>
+        </div>
+    </div>
+    <a href="#">Contacts</a>
+</div>
+</body>
+</html>
